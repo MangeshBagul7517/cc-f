@@ -63,7 +63,7 @@ export default {
         background: "rgb(255, 255, 255)", // White (Background color)
         foreground: "rgb(51, 51, 51)", // Dark Gray (Text color)
         muted: "rgb(243, 244, 246)", // Light Gray (Used for borders, hover states)
-        dark: "#ffffff", // Dark color for headers or footers
+        dark: "#040000", // Dark color for headers or footers
         light: "rgb(249, 250, 251)", // Light color for softer background sections
         success: "rgb(16, 185, 129)", // Green (For success messages, buttons)
         warning: "rgb(245, 158, 11)", // Orange (For warnings, alerts)
