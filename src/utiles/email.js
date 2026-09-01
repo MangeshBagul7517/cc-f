@@ -32,3 +32,29 @@ export const sendEmail = async (formData) => {
 
   await transporter.sendMail(mailOptions);
 };
+
+
+export const sendUnsubscribeEmail = async ({ email, reason }) => {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+  });
+
+  const emailHTML = `
+    <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+      <h2 style="color: #4CAF50;">New Unsubscribe Request</h2>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Reason:</strong> ${reason}</p>
+    </div>
+  `;
+
+  await transporter.sendMail({
+    from: process.env.SMTP_USER,
+    to: process.env.RECIPIENT_EMAIL,
+    subject: 'New Unsubscribe Request',
+    html: emailHTML,
+  });
+};

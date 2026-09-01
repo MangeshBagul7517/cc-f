@@ -14,7 +14,7 @@ export async function handleContactSubmission(data) {
     console.log("calling to the services")
     // Call the service to handle saving the data
     const result = await saveContact(data);
-    return 'Contact saved successfully!';
+    return 'Contact submitted successfully!';
   } catch (error) {
     console.error('Error in Controller:', error.message);
     throw new Error(error.message);

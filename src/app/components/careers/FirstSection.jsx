@@ -14,7 +14,7 @@ const jobs = [
     title: "Backend Developer",
     location: "Hybrid - NY",
     type: "Full-Time",
-    description: "Join our backend team to build scalable APIs using Node.js and MongoDB.",
+    description: "Join our backend team to build scalable APIs using Node.js and modern database technologies.",
   },
   {
     title: "UI/UX Designer",

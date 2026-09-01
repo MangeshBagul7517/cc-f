@@ -1,5 +1,3 @@
-import { contactValidationSchema } from '../validators/contactValidator';
-import { saveContact } from '../services/contactService';
 import { unsubscribeSchema } from '../validators/unSubscribeValidator';
 import { addEmailToUnsubscribe } from '../services/addEmailToUnsubscribeService';
 
@@ -16,7 +14,7 @@ export async function unSubscribeController(data) {
     console.log("calling to the services")
     // Call the service to handle saving the data
     const result = await addEmailToUnsubscribe(data);
-    return 'Email unsubscribed successfully!';
+    return 'Unsubscribe request submitted successfully!';
   } catch (error) {
     console.error('Error in Controller:', error.message);
     throw new Error(error.message);
