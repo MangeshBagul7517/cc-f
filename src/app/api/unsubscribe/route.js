@@ -1,9 +1,11 @@
 import { NextResponse } from 'next/server';
-
-export const runtime = 'nodejs';
+import connectDb from '../../backend/db/connect';
 import { unSubscribeController } from '@/app/backend/controllers/unSubscribeController';
 export async function POST(request) {
   try {
+
+    await connectDb();
+    console.log('after connection')
     const data = await request.json();
     console.log('data after going', data)
 

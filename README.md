@@ -1,38 +1,36 @@
-# Code Creador
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Next.js application configured for deployment on Netlify.
+## Getting Started
 
-## Local development
+First, run the development server:
 
 ```bash
-npm install
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Open http://localhost:3000.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Netlify deployment
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-Netlify supports this Next.js App Router project directly. Use:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- Build command: `npm run build`
-- Publish directory: `.next`
-- Node.js: 22
+## Learn More
 
-The project includes `netlify.toml` with these settings.
+To learn more about Next.js, take a look at the following resources:
 
-### Environment variables
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Add these variables in Netlify:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```text
-SMTP_USER=your-sender-email
-SMTP_PASS=your-smtp-or-app-password
-RECIPIENT_EMAIL=your-recipient-email
-```
+## Deploy on Vercel
 
-Contact and unsubscribe API routes no longer require the previous database layer. They validate the submitted data and send the request by email through the configured SMTP account.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Important
-
-There is no the previous database layer/the previous database layer dependency, connection, model, or environment variable in this project.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
