@@ -58,7 +58,6 @@ const isActive = (path) => pathname === path;
           {/* <Link href="/industries" className="hover:text-primary-base">Industries</Link> */}
           <Link href="/case-studies" className={` ${isActive("/case-studies") ? "font-bold text-primary-base" : ""} hover:text-primary-base`}>Works</Link>
           <Link href="/about-us" className={`${isActive("/about-us") ? "font-bold text-primary-base" : ""} hover:text-primary-base `}>About</Link>
-          <Link href="/career" className="hover:text-primary-base">Career</Link>
           <Link  href="/contact" className={` ${isActive("/contact") ? "font-bold text-primary-base" : ""} hover:text-white text-silver-50 px-4 py-2 hover:bg-primary-300 bg-primary-base rounded-md`}>Contact</Link>
          
           <div className='cursor-pointer' onClick={()=>setContactModalOpen(!isContactModalOpen)}><FaPhoneVolume /></div>

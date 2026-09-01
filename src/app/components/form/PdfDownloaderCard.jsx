@@ -6,7 +6,7 @@ const PdfDownloaderCard = ({
   title = "Download Our Brochure",
   description = "PDF 2.0 MB",
   fileUrl = "/path-to-your-pdf-file.pdf",
-  thumbnailUrl = "https://media.istockphoto.com/id/2181210178/photo/pdf-digital-file-format.jpg?s=2048x2048&w=is&k=20&c=NkitEr4b3rSKeTrFecOM93SluknefR1cX18vrlZfZUQ=",
+  thumbnailUrl = "https://imgs.search.brave.com/RugaNdDXTFI5rZMObJXXnlr1yn5l2_jId-y_kk0UIzA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLm1h/Z25pZmljLmNvbS8y/NTYvMjIwMC8yMjAw/MDU1LnBuZz9zZW10/PWFpc193aGl0ZV9s/YWJlbA",
 }) => {
 
   const downloadRef = useRef(null);

@@ -7,7 +7,7 @@ import ToastNotification from './components/comman/messages/ToastNotification';
 import '../../public/assets/icon/code-creator-image.jpg'
 
 export const metadata = {
-  title: "Code Creator",  // Global title
+  title: "Code Creador",  // Global title
   description: "Your Tech Innovation Partner",  // Global description
   icons: {
     icon: "/assets/icon/cc.png",  // Path to your favicon
